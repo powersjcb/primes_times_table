@@ -22,15 +22,14 @@ def genprimes(count):
     https://en.wikipedia.org/wiki/Prime_number_theorem
 
     Note: this is an approximation that assumes primes occur evenly
-    O(n) * O(n * (n ^0.5)) ->> O(n^2.5)
+    O(n) * O(n^0.5)) -> O(n^1.5)
 
-    TODO: refactor with a prime number sieve
     """
     primes = [None] * count
     num = 2
     n = 0
     while n < count:  # assuming O(n), todo: use PNT for more detailed approx.
-        while not is_prime(num):  # O(n*(n^0.5))
+        while not is_prime(num):  # O(n^0.5)
             num += 1
         primes[n] = num
         num += 1
@@ -51,8 +50,12 @@ def print_row(iterable, first_item, max_value):
 
 def primes_times_table(n):
     """
-    O(n^2 / log(n)) [naive primes generation] + O(n^2)[print rows * cols]
-    O(n) space complexity
+    Time complexity: O(n^2) overall
+     - primes generation ~ O(n^1.5)  [no need to optimize with sieve, view logic is bottleneck]
+     - display logic ~ O(n^2)
+
+    Space complexity in python: O(n) [one row at a time]
+    Space complexity for OS: O(n^2)  [held in memory by terminal when printed]
     """
     primes = genprimes(n)
     max_value = primes[-1] ** 2
