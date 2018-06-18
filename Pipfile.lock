@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d313855f0bf79d9a7526628e0ce84056cd3604e4e0034ddf30772a5aea201504"
+            "sha256": "97f2379dc32ddafa4942fe0dfcf7dbe93ed602a19abd6b26e0ea5b9a6d33c18f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -29,6 +29,10 @@
                 "sha256:e0d0eb91441a3b53dab4d9b743eafc1ac44476296a2053b6ca3af0b139faf87b"
             ],
             "version": "==18.1.0"
+        },
+        "e1839a8": {
+            "editable": true,
+            "path": "."
         },
         "more-itertools": {
             "hashes": [

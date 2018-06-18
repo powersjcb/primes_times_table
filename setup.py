@@ -8,4 +8,9 @@ setup(
     author='Jacob Powers',
     author_email='powersjcb@gmail.com',
     packages=find_packages(where='lib'),
+    entry_points={
+        'console_scripts': [
+            'genprimes = nprimes:main'
+        ],
+    },
 )
