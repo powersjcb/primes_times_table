@@ -7,6 +7,7 @@ setup(
     version='0.0.0',
     author='Jacob Powers',
     author_email='powersjcb@gmail.com',
+    url='https://github.com/powersjcb/primes_times_table',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
