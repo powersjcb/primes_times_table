@@ -3,14 +3,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='nprimes',
+    name='primes_times_table',
     version='0.0.0',
     author='Jacob Powers',
     author_email='powersjcb@gmail.com',
-    packages=find_packages(where='lib'),
+    packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'genprimes = nprimes:main'
+            'genprimes = primes_times_table:main'
         ],
     },
 )
