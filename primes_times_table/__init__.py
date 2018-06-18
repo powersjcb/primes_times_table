@@ -62,7 +62,7 @@ def primes_times_table(n):
         print_row((row * col for col in primes), row, max_value)
 
 
-def main(argv):
+def main_wrapper(argv):
     if len(argv) > 1:
         n = int(argv[1])
     else:
@@ -71,5 +71,9 @@ def main(argv):
     primes_times_table(n)
 
 
+def main():
+    main_wrapper(sys.argv)
+
+
 if __name__ == '__main__':
-    main(sys.argv)
+    main()

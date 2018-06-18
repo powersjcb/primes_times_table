@@ -16,7 +16,7 @@ def test_cli_tool(capsys):
     2 4
     """
     argv = ['genprimes', '1']
-    primes_times_table.main(argv)
+    primes_times_table.main_wrapper(argv)
     out, err = capsys.readouterr()
     assert err == ''
     assert re.findall(r"^\s+2$", out, re.MULTILINE)
