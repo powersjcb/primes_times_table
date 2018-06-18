@@ -5,8 +5,8 @@ This command line script prints a times table for the first n prime numbers.
 
 ### Installation
 
-- local development: `pipenv install`
-- from pypi
+- For local development: `pipenv install`
+- Using [pypi.org](https://pypi.org/project/primes_times_table/) distribution:
     - `pipenv install primes_times_table` or
     - `pip install primes_times_table`
   
